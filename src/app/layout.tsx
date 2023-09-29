@@ -5,9 +5,12 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Horário de Aulas - Unifacisa',
+  title: 'Budega da Facisa - Sua compra é nossa alegria',
   description:
     'Aplicação desenvolvida para a competência de Desenvolvimento Web com REST da Unifacisa',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
