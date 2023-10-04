@@ -155,9 +155,9 @@ export function RegisterProductForm() {
       </div>
 
       <div className="flex flex-col gap-2.5">
-        <Label htmlFor="price">URL da foto do produto</Label>
+        <Label htmlFor="imgUrl">URL da foto do produto</Label>
         <Input
-          id="price"
+          id="imgUrl"
           placeholder="https://..."
           type="text"
           {...register('imgUrl')}
