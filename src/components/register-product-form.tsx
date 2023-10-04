@@ -93,11 +93,11 @@ export function RegisterProductForm() {
       </div>
 
       <div className="flex flex-col gap-2.5">
-        <Label htmlFor="name">
+        <Label htmlFor="phoneNumber">
           Telefone para contato <span className="text-red-500">*</span>
         </Label>
         <Input
-          id="name"
+          id="phoneNumber"
           placeholder="(00) 99999-9999"
           type="text"
           {...register('advertiserPhoneNumber')}
