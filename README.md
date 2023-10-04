@@ -1,34 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="Unifacisa" src="https://img.shields.io/badge/Unifacisa-00599C?style=for-the-badge&logo=java&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+</div>
 
-## Getting Started
+# Unifacisa - Criar Serviços Web com REST (frontend) 🗃️
 
-First, run the development server:
+Repositório para alocar a aplicação web desenvolvida para a competência de Criar Serviços Web com REST da Unifacisa.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+A aplicação está hospedada na Vercel e você pode acessá-la [clicando aqui](https://budega-unifacisa.vercel.app/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting Started ▶️
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O colaborador deverá possuir credenciais de acesso ao repositório e estar associado ao grupo do projeto.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Todos os pré-requisitos necessários para execução do projeto deverão ser devidamente instalados na máquina local do desenvolvedor.
 
-## Learn More
+### Pré-requisitos ⚙️
 
-To learn more about Next.js, take a look at the following resources:
+- [Repositório](https://github.com/darllinsonazvd/web-rest-unifacisa-web)
+- [Node.js](https://nodejs.org/en)
+- [Yarn](https://yarnpkg.com/getting-started)
+- [Node Version Manager (Opcional)](https://github.com/nvm-sh/nvm)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Configurando as Variáveis de Ambiente 🌐
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+O projeto utiliza um arquivo `.env` para armazenar informações sensíveis, como credenciais do banco de dados e configurações de autenticação e endereço da API. Certifique-se de criar um arquivo .env.local na raiz do projeto e configurar as variáveis necessárias.
 
-## Deploy on Vercel
+Crie um arquivo `.env.local` na raiz do projeto e insira a linha abaixo:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`NEXT_PUBLIC_API_URL="https://products-web-rest.onrender.com"`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Instalando as Dependências 💾
+
+`yarn install`
+
+### Inicializando o Servidor ✅
+
+`yarn dev`
+
+## Autores 🧑‍💻
+
+- [Darllinson Azevedo](https://github.com/darllinsonazvd)
+- [Pedro Henrique Pereira](https://github.com/pedrohpdo)
+- [Pedro Henrique Santos](https://github.com/pedrohsantosg)
+- [Rafael Macedo](https://github.com/rafaelmacedos)
+- [Ramon Montenegro](https://github.com/ramonmontenegropng)
