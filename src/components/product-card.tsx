@@ -16,7 +16,10 @@ export function ProductCard({ product }: ProductCardProps) {
     <div className="w-full rounded-lg border bg-background">
       <div className="flex items-center justify-center rounded-lg p-8">
         <Image
-          src={product.imgUrl}
+          src={
+            product.imgUrl ??
+            'https://centralcabos.vteximg.com.br/arquivos/ids/159950-400-400/produto_sem_foto.gif?v=635922653155000000'
+          }
           alt={product.name}
           className="w-72 rounded-lg"
           width={1280}
