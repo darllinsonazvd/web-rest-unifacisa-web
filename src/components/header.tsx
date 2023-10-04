@@ -19,7 +19,9 @@ export function Header({ showSearchBar }: HeaderProps) {
       <Link href="/products">
         <div className="flex w-fit items-center gap-2">
           <Image src={unifacisaLogo} alt="Unifacisa logo" width={24} />
-          <h1 className="text-xl font-bold text-primary">Budega Unifacisa</h1>
+          <h1 className="hidden text-xl font-bold text-primary sm:block">
+            Budega Unifacisa
+          </h1>
         </div>
       </Link>
       <div
@@ -39,14 +41,14 @@ export function Header({ showSearchBar }: HeaderProps) {
         </Button>
       </div>
       <div className="flex w-fit items-center gap-3">
-        <h1>Bem-vindo, Bruno Catão!</h1>
-        <div className="h-8 w-[1px] bg-white" />
+        <h1 className="hidden text-sm lg:block">Bem-vindo, Bruno Catão!</h1>
+        <div className="hidden h-8 w-[1px] bg-white lg:flex" />
         <Link
           href="/login"
-          className="flex items-center gap-1.5 hover:text-primary hover:underline hover:underline-offset-4"
+          className="flex items-center gap-1.5 text-sm hover:text-primary hover:underline hover:underline-offset-4"
         >
           Sair
-          <SignOut size={18} />
+          <SignOut size={16} />
         </Link>
       </div>
     </div>
