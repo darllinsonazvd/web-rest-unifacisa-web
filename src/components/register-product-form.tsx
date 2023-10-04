@@ -22,6 +22,13 @@ export function RegisterProductForm() {
       .min(6, 'A descrição do produto deve conter no mínimo 6 caracteres')
       .optional()
       .or(z.literal('')),
+    advertiserPhoneNumber: z
+      .string()
+      .min(1, 'Número de telefone obrigatório')
+      .regex(
+        /^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$/gm,
+        'Número de telefone inválido',
+      ),
     price: z.coerce.number().min(0.01, 'O preço é obrigatório'),
     imgUrl: z
       .string()
@@ -83,6 +90,29 @@ export function RegisterProductForm() {
             {errors.name?.message}
           </span>
         )}
+      </div>
+
+      <div className="flex flex-col gap-2.5">
+        <Label htmlFor="name">
+          Telefone para contato <span className="text-red-500">*</span>
+        </Label>
+        <Input
+          id="name"
+          placeholder="(00) 99999-9999"
+          type="text"
+          {...register('advertiserPhoneNumber')}
+        />
+        {errors.advertiserPhoneNumber && (
+          <span className="mb-1 text-xs text-red-500">
+            {errors.advertiserPhoneNumber?.message}
+          </span>
+        )}
+
+        <p className="text-sm text-muted-foreground">
+          Coloque seu telefone para contato (DDD + Número, no formato &quot;00
+          99999-9999&quot;), o comprador irá entrar em contato diretamente com
+          você. Venda seu peixe! 🐠
+        </p>
       </div>
 
       <div className="flex flex-col gap-2.5">
