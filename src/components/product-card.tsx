@@ -17,7 +17,7 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="flex h-80 items-center justify-center rounded-lg">
         <Image
           src={
-            product.imgUrl ??
+            product.imgUrl ||
             'https://sanfelipo.com.br/wp-content/uploads/2022/08/20190726_200126_1____01-PRODUTO-SEM-IMAGEM-1000X1000.jpg'
           }
           alt={product.name}
