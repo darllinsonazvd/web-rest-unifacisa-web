@@ -9,7 +9,7 @@ export default function Login() {
   return (
     <div className="container relative h-screen flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
       <div className="relative hidden h-full flex-col items-center justify-center bg-muted text-white dark:border-r lg:flex">
-        <div className="absolute inset-0 z-10 bg-zinc-950/90" />
+        <div className="absolute inset-0 z-10 bg-slate-950/90" />
         <div className="absolute inset-0 bg-[url('/bg-auth.jpg')]" />
         <div className="relative z-20 flex items-center">
           <Image src={unifacisaLogo} alt="Unifacisa logo" width={360} />

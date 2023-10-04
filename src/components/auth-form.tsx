@@ -52,7 +52,7 @@ export function AuthForm({ className, ...props }: UserAuthFormProps) {
     // Fake loading
     setTimeout(() => {
       setIsSubmitting(false)
-      router.push('/home')
+      router.push('/products')
     }, 1500)
   }
 
