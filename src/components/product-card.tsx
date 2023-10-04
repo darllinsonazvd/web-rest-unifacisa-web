@@ -33,7 +33,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </h5>
         <div className="mb-4 mt-2.5 h-24 w-full overflow-clip overflow-ellipsis">
           <p className="text-ellipsis break-words text-sm text-muted-foreground">
-            {ExcerptDescription(product.description, 150) ??
+            {ExcerptDescription(product.description, 150) ||
               'O anunciante não deixou uma descrição sobre o produto 😕'}
           </p>
         </div>
