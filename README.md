@@ -9,7 +9,7 @@
 
 Repositório para alocar a aplicação web desenvolvida para a competência de Criar Serviços Web com REST da Unifacisa.
 
-A aplicação está hospedada na Vercel e você pode acessá-la [clicando aqui](https://budega-unifacisa.vercel.app/).
+A aplicação está hospedada na Vercel e você pode acessá-la [clicando aqui](https://budega-unifacisa.vercel.app/). As credenciais para acesso podem ser qualquer uma, não implementamos autenticação na aplicação (pro enquanto, ou seja, qualquer e-mail ou senha vai funcionar).
 
 ## Getting Started ▶️
 
