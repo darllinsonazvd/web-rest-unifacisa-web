@@ -14,6 +14,12 @@ interface HeaderProps {
 }
 
 export function Header({ showSearchBar }: HeaderProps) {
+  const handleSearch = () => {
+    alert(
+      'Estamos preparando essa feature com carinho! Aguarde as próximas atualizações ❤️',
+    )
+  }
+
   return (
     <div className="fixed left-0 top-0 z-10 flex h-16 w-full items-center gap-8 border-b bg-background p-4">
       <Link href="/products">
@@ -36,7 +42,7 @@ export function Header({ showSearchBar }: HeaderProps) {
           autoCapitalize="none"
           autoCorrect="off"
         />
-        <Button type="submit">
+        <Button type="submit" onClick={handleSearch}>
           <MagnifyingGlass size={18} />
         </Button>
       </div>

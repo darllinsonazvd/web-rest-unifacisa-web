@@ -1,14 +1,24 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+
 import { Header } from '@/components/header'
 import { NoProducts } from '@/components/no-products'
 import { ProductsList } from '@/components/products-list'
 import { RegisterProductAlert } from '@/components/register-product-alert'
 
+import { api } from '@/lib/api'
+
 import { Product } from '@/models/product.model'
 
 export default function Products() {
-  const products: Product[] = []
+  const [products, setProducts] = useState<Product[]>([])
+
+  useEffect(() => {
+    api.get('/products').then((response) => {
+      setProducts(response.data)
+    })
+  }, [])
 
   return (
     <div className="flex h-screen w-full flex-col">
