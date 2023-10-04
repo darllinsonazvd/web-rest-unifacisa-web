@@ -27,7 +27,7 @@ export default function Products() {
     <div className="flex h-screen w-full flex-col">
       <Header showSearchBar={true} />
 
-      <main className="flex w-full flex-col gap-8 px-4 pt-20">
+      <main className="flex w-full flex-col gap-3 px-4 pt-20">
         <RegisterProductAlert />
 
         <div className="grid place-items-center">
