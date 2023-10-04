@@ -18,7 +18,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <Image
           src={
             product.imgUrl ??
-            'https://centralcabos.vteximg.com.br/arquivos/ids/159950-400-400/produto_sem_foto.gif?v=635922653155000000'
+            'https://sanfelipo.com.br/wp-content/uploads/2022/08/20190726_200126_1____01-PRODUTO-SEM-IMAGEM-1000X1000.jpg'
           }
           alt={product.name}
           className="h-72 rounded-lg"
