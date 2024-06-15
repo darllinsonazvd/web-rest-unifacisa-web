@@ -7,8 +7,6 @@ import { MagnifyingGlass, SignOut } from '@phosphor-icons/react'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 
-import unifacisaLogo from '../assets/img/logo-unifacisa-short.png'
-
 interface HeaderProps {
   showSearchBar: boolean
 }
@@ -24,7 +22,12 @@ export function Header({ showSearchBar }: HeaderProps) {
     <div className="fixed left-0 top-0 z-10 flex h-16 w-full items-center gap-8 border-b bg-background p-4">
       <Link href="/products">
         <div className="flex w-fit items-center gap-2">
-          <Image src={unifacisaLogo} alt="Unifacisa logo" width={24} />
+          <Image
+            src="/assets/img/logo-unifacisa-short.png"
+            alt="Unifacisa logo"
+            width={24}
+            height={30}
+          />
           <h1 className="hidden text-xl font-bold text-primary sm:block">
             Budega Unifacisa
           </h1>

@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import unifacisaLogo from '../../assets/img/logo-unifacisa.png'
-
 import { AuthForm } from '@/components/auth-form'
 
 export default function Login() {
@@ -12,7 +10,12 @@ export default function Login() {
         <div className="absolute inset-0 z-10 bg-slate-950/90" />
         <div className="absolute inset-0 bg-[url('/bg-auth.jpg')]" />
         <div className="relative z-20 flex items-center">
-          <Image src={unifacisaLogo} alt="Unifacisa logo" width={360} />
+          <Image
+            src="/assets/img/logo-unifacisa.png"
+            alt="Unifacisa logo"
+            width={360}
+            height={80}
+          />
         </div>
       </div>
       <div className="p-8">
